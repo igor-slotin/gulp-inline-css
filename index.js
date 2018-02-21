@@ -1,8 +1,8 @@
 'use strict';
 
-var PluginError = require('plugin-error'),
-    through = require('through2'),
-    inlineCss = require('inline-css');
+var PluginError = require('./modules/plugin-error'),
+    through = require('./modules/through2'),
+    inlineCss = require('./modules/inline-css');
 
 module.exports = function (opt) {
     return through.obj(function (file, enc, cb) {

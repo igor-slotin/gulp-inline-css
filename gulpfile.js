@@ -1,9 +1,9 @@
 /* eslint-disable */
 'use strict';
 
-var gulp = require('gulp'),
-    mocha = require('gulp-mocha'),
-    eslint = require('gulp-eslint');
+var gulp = require('./modules/gulp'),
+    mocha = require('./modules/gulp-mocha'),
+    eslint = require('./modules/gulp-eslint');
 
 var paths = {
     scripts: ['./*.js', '!./gulpfile.js']
